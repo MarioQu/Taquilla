@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/gothampro.ttf');
+}
+@font-face {
+    font-family: 'GothamPro-Light';
+    src: url('../fonts/gothampro_light.ttf');
+}
+@font-face {
+    font-family: 'GothamPro-Bold';
+    src: url('../fonts/gothampro_bold.ttf');
+}
+@font-face {
+    font-family: 'GothamPro-Black';
+    src: url('../fonts/gothampro_black.ttf');
+}
+
+
+.myborder{
+    border: 1px dashed #00ffff !important;
+}
+body{
+    background-color: #FAFBFD;
+}
+
+
+/* ---------- Colores ---------- */
+:root{
+    --white:        #ffffff;
+    --black:        #000000;
+    --red:          #DA291C;
+    --purple:       #5F2167;
+    --gray1:        #808391;
+    --gray2:        #F6F7FB;
+    --grayf1:       #F1F3F9;
+    --dark1:        #1D1F24;
+    --green:        #258910;
+    --green2:       #169A8E;
+}
+
+
+/* ---------- Tipografía ---------- */
+.titles24{
+    font-family: 'GothamPro-Bold';
+    font-size: 24px;
+}
+.titles32{
+    font-family: 'GothamPro-Bold';
+    font-size: 32px;
+}
+.titles40{
+    font-family: 'GothamPro-Bold';
+    font-size: 40px;
+}
+.txt14{
+    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.txt16{
+    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.txt18{
+    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.txt24{
+    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.fwhite{
+    color: var(--white);
+}
+.fblack{
+    color: var(--black);
+}
+.fred{
+    color: var(--red);
+}
+.fdark1{
+   color: var(--dark1); 
+}
+.fgreen{
+    color: var(--green)
+}
+.fgreen2{
+    color: var(--green2)
+}
+
+.blackback{
+    background-color: var(--black);
+}
+.whiteback{
+    background-color: var(--white);
+}
+.grayf1back{
+    background-color: var(--grayf1);
+}
+.gray2back{
+    background-color: var(--gray2)
+}
+
+.f400{
+    font-weight: 400;
+}
+.f700{
+    font-weight: 700;
+}
+
+/* ---------- Botones ---------- */
+.btn-purple{
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    color: var(--white);
+}.btn-purple:hover{
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: var(--white);
+    color: var(--purple);
+}
+
+.btn-white{
+    background-color: var(--white);
+    border: 1px solid var(--purple);
+    color: var(--purple);
+}.btn-white:hover{
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: var(--purple);
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+
+/* **************************************  
+                Home 
+************************************** */
+#back-img-header{
+    background-image: url("..//images/header-taquilla.svg");
+    background-position: top center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    height: 600px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}    
+.mb-lg{
+    margin-bottom: 200px;
+}
+.colcards{
+    background-color: rgba(255, 255, 255, .95);
+    border-radius: 24px;
+}
+.banner_anuncio .img-abs{
+    position: absolute;
+    bottom: 0;
+}.banner_anuncio .img-abs2{
+    position: absolute;
+    bottom: -10px;
+    right: -40px;
+}
+#modalViajantes .modal-dialog-centered .modal-dialog, 
+#modalViajantes .modal-dialog-centered.modal-dialog {
+    align-items: flex-end !important;
+}
+#modalViajantes .modal-content{
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+#modalViajantes .icon-viajeros{
+    width: 50px;
+}
+#modalViajantes .btn-cant{
+    border: 2px solid #ECEFF6;
+    border-radius: 7px;
+    box-shadow: none !important;
+    color: #959BA8;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+#modalViajantes .form-control{
+    width: 70px;
+    text-align: center;
+    border: none !important;
+    box-shadow: none !important;
+}
+#modalViajantes .modal-footer .row,
+#modalViajantes .modal-footer .btn{
+    width: 100%;
+}
+
+
+/* **************************************  
+            Pantalla corridas 
+************************************** */
+#estatus_corrida{
+    border-bottom: 2px solid #B5BAC7;
+    background-color: #ECEFF6;
+}
+
+.containerlg-trayecto{
+    background-color: #F4F6F9;
+}
+.containerlg-trayecto .container-lg{
+    background-color: #fff;
+}
+#corridas{
+    height: 770px;
+    overflow-y: scroll;
+}
+#corridas{
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+#corridas::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+@media(max-width: 992px){
+    #estatus_corrida .separador{
+        width: 30px;                
+    }
+}

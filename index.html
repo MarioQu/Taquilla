@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <title>Taquilla reversible</title>
+    </head>
+    
+    <body>
+        <section class="container-fluid mt-5">
+            <div class="container-lg">
+                <div class="row">  
+                    <div class="col-12 text-left">
+                        <img src="assets/images/Logo.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="titles40 fwhite text-left">
+                            Compra tus boletos más rápido en el kiosko digital de ADO y vive una nueva experiencia.
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid px-0" id="back-img-header"></section>
+        
+        <section class="container-fluid mt-4 mb-lg">
+            <div class="container-lg colcards shadow py-5 px-5">
+                <h2 class="titles40 fblack text-center">¿A dónde quieres viajar?</h2>
+                
+                <div class="row mt-5">
+                    <div class="col-lg-6 px-4">
+                        <div class="card whiteback border-0 shadow mb-5">
+                            <img src="assets/images/capu.svg" class="card-img-top" alt="">
+                            <div class="card-body text-center px-5">
+                                <h5 class="titles24 fblack">Puebla, Capu</h5>
+                                <button type="button" class="btn btn-white btn-lg w-100 mt-3" data-toggle="modal" data-target="#modalViajantes">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div><!-- /.col-6 card --> 
+                    
+                    <div class="col-lg-6 px-4">
+                        <div class="card whiteback border-0 shadow mb-5">
+                            <img src="assets/images/oaxaca.svg" class="card-img-top" alt="">
+                            <div class="card-body text-center px-5">
+                                <h5 class="titles24 fblack">Oaxaca</h5>
+                                <button type="button" class="btn btn-white btn-lg w-100 mt-3" data-toggle="modal" data-target="#modalViajantes">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div><!-- /.col-6 card --> 
+                    
+                    <div class="col-lg-6 px-4">
+                        <div class="card whiteback border-0 shadow mb-5">
+                            <img src="assets/images/caxa.svg" class="card-img-top" alt="">
+                            <div class="card-body text-center px-5">
+                                <h5 class="titles24 fblack">Xalapa, CAXA</h5>
+                                <button type="button" class="btn btn-white btn-lg w-100 mt-3" data-toggle="modal" data-target="#modalViajantes">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div><!-- /.col-6 card --> 
+                    
+                    <div class="col-lg-6 px-4">
+                        <div class="card whiteback border-0 shadow mb-5">
+                            <img src="assets/images/tehuacan.svg" class="card-img-top" alt="">
+                            <div class="card-body text-center px-5">
+                                <h5 class="titles24 fblack">Tehuacán</h5>
+                                <button type="button" class="btn btn-white btn-lg w-100 mt-3" data-toggle="modal" data-target="#modalViajantes">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div><!-- /.col-6 card --> 
+                </div>
+                
+                <!-- Banner Promocional -->
+                <div class="row mt-5 py-4 px-4 banner_anuncio rounded-lg blackback">
+                    <div class="col-lg-1 d-flex align-items-center justify-content-start justify-content-md-start justify-content-lg-center p-0">
+                        <img src="assets/images/escudo-ruta-cafe.svg" class="img-fluid" alt="">
+                        <img src="assets/images/cafe.svg" class="img-fluid d-lg-none img-abs2" alt="">
+                    </div>
+                    <div class="col-lg-9 d-flex flex-column align-items-start justify-content-center">
+                        <h3 class="titles32 fwhite text-left">Ruta Café</h3>
+                        <p class="txt18 fwhite text-left mb-0 pb-0">
+                            Recuerda que si viajas en GL o Platino obtendrás un café gratis. 
+                        </p>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block">
+                        <img src="assets/images/cafe.svg" class="img-fluid img-abs" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modalViajantes" tabindex="-1" aria-labelledby="modalViajantesLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content py-4 px-4">
+                    <div class="modal-header justify-content-center">
+                        <h5 class="text-center titles40 fblack" id="modalViajantesLabel">¿Quiénes viajan?</h5>
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+                    </div>
+                    <div class="modal-body pb-5">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 d-flex align-items-end justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start">
+                                    <span class="titles40 fblack">Puebla, Capu</span>
+                                </div>
+                                <div class="col-12 col-lg-6 d-flex align-items-end justify-content-center justify-content-sm-center justify-content-md-center justify-content-md-end">
+                                    <span class="txt24 fblack">Hoy - 26 de marzo .  21:30 h</span>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-5">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                            <img src="assets/images/iocono-viajeros.svg" class="img-fluid float-left mr-3 icon-viajeros" alt="">
+                                            <div>
+                                                <p class="titles32 fblack mb-0 pb-0 mb-n2">Adulto</p>
+                                                <span class="form-text text-muted">Más de 12 años</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center justify-content-lg-end">
+                                            <button class="btn btn-cant" id="dec_ad">-</button>
+                                            <form action="">
+                                                <input type="text" id="total_ad" class="titles40 form-control fblack">
+                                            </form>
+                                            <button class="btn btn-cant" id="inc_ad">+</button>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-12 adulto -->
+                                
+                                <div class="col-12 mt-4">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                            <img src="assets/images/iocono-viajeros.svg" class="img-fluid float-left mr-3 icon-viajeros" alt="">
+                                            <div>
+                                                <p class="titles32 fblack mb-0 pb-0 mb-n2">Niños</p>
+                                                <span class="form-text text-muted">De 5 a 12 años</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center justify-content-lg-end">
+                                            <button class="btn btn-cant" id="dec_ni">-</button>
+                                            <form action="">
+                                                <input type="text" id="total_ni" class="titles40 form-control fblack">
+                                            </form>
+                                            <button class="btn btn-cant" id="inc_ni">+</button>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-12 niños -->
+                                
+                                <div class="col-12 mt-4">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                            <img src="assets/images/iocono-viajeros.svg" class="img-fluid float-left mr-3 icon-viajeros" alt="">
+                                            <div>
+                                                <p class="titles32 fblack mb-0 pb-0 mb-n2">INAPAM</p>
+                                                <span class="form-text text-muted">Con credencial vigente</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center justify-content-lg-end">
+                                            <button class="btn btn-cant" id="dec_ina">-</button>
+                                            <form action="">
+                                                <input type="text" id="total_ina" class="titles40 form-control fblack">
+                                            </form>
+                                            <button class="btn btn-cant" id="inc_ina">+</button>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-12 INAPAM -->
+                                
+                                <div class="col-12 mt-4">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                            <img src="assets/images/iocono-viajeros.svg" class="img-fluid float-left mr-3 icon-viajeros" alt="">
+                                            <div>
+                                                <p class="titles32 fblack mb-0 pb-0 mb-n2">Estudiantes</p>
+                                                <span class="form-text text-muted">Con credencial vigente</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center justify-content-lg-end">
+                                            <button class="btn btn-cant" id="dec_est">-</button>
+                                            <form action="">
+                                                <input type="text" id="total_est" class="titles40 form-control fblack">
+                                            </form>
+                                            <button class="btn btn-cant" id="inc_est">+</button>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-12 Estudiantes -->
+                                
+                                <div class="col-12 mt-4">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+                                            <img src="assets/images/iocono-viajeros.svg" class="img-fluid float-left mr-3 icon-viajeros" alt="">
+                                            <div>
+                                                <p class="titles32 fblack mb-0 pb-0 mb-n2">Maestros</p>
+                                                <span class="form-text text-muted">Con credencial vigente</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center justify-content-lg-end">
+                                            <button class="btn btn-cant" id="dec_mae">-</button>
+                                            <form action="">
+                                                <input type="text" id="total_mae" class="titles40 form-control fblack">
+                                            </form>
+                                            <button class="btn btn-cant" id="inc_mae">+</button>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-12 Maestros -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-2 mb-sm-2 mb-md-2 mb-lg-0">
+                                <button type="button" class="btn btn-lg btn-white py-3" data-dismiss="modal">Modificar viaje</button>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <a href="pantalla2.html" type="button" class="btn btn-lg btn-purple py-3">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <script src="assets/js/jquery.slim.min.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>
+       
+        <script>
+            $(document).ready(function(){
+                var total_ad    = 0;
+                var total_ni    = 0;
+                var total_ina   = 0;
+                var total_est   = 0;
+                var total_mae   = 0;
+                
+                $("#total_ad").val(total_ad); 
+                $("#total_ni").val(total_ni); 
+                $("#total_ina").val(total_ina); 
+                $("#total_est").val(total_est); 
+                $("#total_mae").val(total_mae); 
+                
+                // if($("#total_ad").val(total_ad) == 0 ){
+                //     $("#total_ad").removeClass("fblack");
+                //     $("#total_ad").addClass("text-muted"); 
+                // }else{
+                //     $("#total_ad").addClass("fblack");
+                //     $("#total_ad").removeClass("text-muted");
+                // }
+                
+                function disableButton() {
+                    $("#dec_ad").prop("disabled", total_ad <= 0);
+                    $("#dec_ni").prop("disabled", total_ni <= 0);
+                    $("#dec_ina").prop("disabled", total_ina <= 0);
+                    $("#dec_est").prop("disabled", total_est <= 0);
+                    $("#dec_mae").prop("disabled", total_mae <= 0);
+                }
+
+                $("#inc_ad").click(function(){
+                    total_ad++;
+                    $("#total_ad").val(total_ad);
+                    disableButton();
+                });
+                $("#dec_ad").click(function(){
+                    if (total_ad > 0) { 
+                        total_ad--;
+                        $("#total_ad").val(total_ad);
+                        // $("#total_ad").removeClass("fblack");
+                        // $("#total_ad").addClass("text-muted");
+                        disableButton();
+                    }       
+                });
+                
+                $("#inc_ni").click(function(){
+                    total_ni++;
+                    $("#total_ni").val(total_ni);
+                    disableButton();
+                });
+                $("#dec_ni").click(function(){
+                    if (total_ni > 0) { 
+                        total_ni--;
+                        $("#total_ni").val(total_ni);
+                        disableButton();
+                    }       
+                });
+                
+                $("#inc_ina").click(function(){
+                    total_ina++;
+                    $("#total_ina").val(total_ina);
+                    disableButton();
+                });
+                $("#dec_ina").click(function(){
+                    if (total_ina > 0) { 
+                        total_ina--;
+                        $("#total_ina").val(total_ina);
+                        disableButton();
+                    }       
+                });
+                
+                $("#inc_est").click(function(){
+                    total_est++;
+                    $("#total_est").val(total_est);
+                    disableButton();
+                });
+                $("#dec_est").click(function(){
+                    if (total_est > 0) { 
+                        total_est--;
+                        $("#total_est").val(total_est);
+                        disableButton();
+                    }       
+                });
+                
+                $("#inc_mae").click(function(){
+                    total_mae++;
+                    $("#total_mae").val(total_mae);
+                    disableButton();
+                });
+                $("#dec_mae").click(function(){
+                    if (total_mae > 0) { 
+                        total_mae--;
+                        $("#total_mae").val(total_mae);
+                        disableButton();
+                    }       
+                });
+                                                
+                disableButton();
+            });
+        </script>
+    </body>
+</html>

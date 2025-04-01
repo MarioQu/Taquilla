@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <title>Taquilla reversible</title>
+    </head>
+    
+    <body>
+        <section class="container-fluid py-3 sticky-top" id="estatus_corrida">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-12 col-lg-12 d-flex align-items-center justify-content-center">
+                        <img src="assets/images/corrida-on.svg" class="img-fluid mr-2" alt="">
+                        <span class="txt14">Elegir corrida</span>
+                        
+                        <img src="assets/images/separador.png" class="separador img-fluid mx-2 mx-sm-2 mx-md-2 my-2 my-sm-2 my-md-0 my-lg-0" alt="">
+                        
+                        <img src="assets/images/asientos-off.svg" class="img-fluid mr-2" alt="">
+                        <span class="txt14 text-muted2">Asientos y datos</span>
+                        
+                        <img src="assets/images/separador.png" class="separador img-fluid mx-2 mx-sm-2 mx-md-2 mx-2 my-2 my-sm-2 my-md-0 my-lg-0" alt="">
+                        
+                        <img src="assets/images/pago-off.svg" class="img-fluid mr-2" alt="">
+                        <span class="txt14 text-muted2">Pago</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Trayecto -->
+        <section class="container-fluid containerlg-trayecto py-4">
+            <div class="container-lg rounded-lg">
+                <div class="row p-2">
+                    <div class="col-2 col-lg-1">
+                        <img src="assets/images/ruta.svg" class="img-fluid" alt="" style="width: 50px;">
+                    </div>
+                    <div class="col-10 col-lg-11 pl-0">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h5 class="titles24">México, TAPO</h5>
+                                <span class="text18">Terminal origen</span>
+                                <!-- <span class="float-right titles24">12:00hrs</span> -->
+                                <hr>
+                            </div>
+                            <div class="col-lg-12">
+                                <h5 class="titles24">Puebla, CAPU</h5>
+                                <span class="text18">Terminal destino</span>
+                                <!-- <span class="float-right titles24">14:30hrs</span> -->
+                                <hr>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Boletos/Fecha -->
+        <section class="container-fluid py-4 whiteback">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <span class="fblack titles32">1 Adulto</span>
+                    </div>
+                    <div class="col-lg-6 text-left text-sm-left text-md-right">
+                        <span class="fblack titles24">Hoy - Vier. 30 de ago. 21:31 h</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Corridas disponibles -->
+        <section class="container-fluid grayf1back">
+            <div class="container-lg py-4" id="corridas">
+                <!-- 
+                    Aquí se pintan las corridas N veces (mediante la función javascript de abajo) para evitar repetir el bloque HTML,
+                    si se quiere quitar la función y pintar el HTML de forma normal, basta con traer aquí el código dentro de la variable bloqueHTML
+                -->
+            </div>
+        </section>
+        
+        <section class="container-fluid py-5">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="index.html" class="btn btn-white btn-lg w-100 py-3">Regresar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            
+        <script src="assets/js/jquery.slim.min.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script>
+            const corridas = document.getElementById('corridas');
+
+            const bloqueHTML = `
+                <div class="row shadow whiteback mt-3 py-3 rounded-lg">
+                    <div class="col-12 col-sm-2 col-lg-2 d-flex align-items-center justify-content-center">
+                        <img src="assets/images/ADO.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-sm-7 col-lg-6 d-flex align-items-start justify-content-between">
+                        <div>
+                            <span class="titles24">06:00 h</span>
+                            <p class="txt14 pb-0 mb-0">México, TAPO</p>
+                        </div>
+                        <div>
+                            <span class="text14 fdark1">3h 10min. aprox. </span>
+                        </div>
+                        <div>
+                            <span class="titles24">06:00 h</span>
+                            <p class="txt14 pb-0 mb-0">México, TAPO</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 offset-lg-0 px-2 px-sm-2 px-md-2 pt-3 pt-sm-3 pt-md-3 pt-lg-0">
+                        <p class="txt14 fred text-right mb-0 pb-0">$1,200.00 MXN</p>
+                        <p class="txt18 f700 fdark1 text-right mb-0 pb-0">$1,000.00MXN</p>
+                    </div>
+                    <div class="col-6 col-sm-3 offset-sm-9 col-lg-2 offset-lg-0 d-flex align-items-center justify-content-center pt-3 pt-sm-3 pt-md-3 pt-lg-0">
+                        <a href="pantalla3.html" class="btn btn-purple w-100">Seleccionar</a>
+                    </div>
+                </div><!-- /row corridas -->
+            `;
+
+            
+            for (let i = 0; i < 10; i++) {
+                corridas.innerHTML += bloqueHTML; 
+            }
+        </script>
+    </body>
+</html>
