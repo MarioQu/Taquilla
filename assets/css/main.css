@@ -73,6 +73,11 @@ a{
     font-family: 'GothamPro', Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
+.txt20{
+    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+}
 .txt24{
     font-family: 'GothamPro', Arial, Helvetica, sans-serif;
     font-size: 24px;
@@ -128,6 +133,9 @@ a{
 .purpleback{
     background-color: var(--purple2);
     border: 1px solid var(--purple);
+}
+.redback{
+    background-color: var(--red);
 }
 
 .f400{
@@ -186,7 +194,7 @@ a{
                 Home 
 ************************************** */
 #back-img-header{
-    background-image: url("..//images/header-taquilla.svg");
+    background-image: url("..//images/header-taquilla.png");
     background-position: top center;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -321,5 +329,9 @@ a{
             Pantalla final 
 ************************************** */
 #sigue_tu_viaje{
-    background-image: url("../images/seguir-viaje.svg");
+    background-image: url("../images/seguir-mi-viajeOK.png");
+    background-position: bottom left;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
