@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <title>Taquilla reversible</title>
+    </head>
+    
+    <body>
+        <section class="container-fluid py-3 sticky-top" id="estatus_corrida">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-12 col-lg-12 d-flex align-items-center justify-content-center">
+                        <img src="assets/images/corrida-off.svg" class="img-fluid mr-2" alt="">
+                        <span class="txt14">Elegir corrida</span>
+                        
+                        <img src="assets/images/separador.png" class="separador img-fluid mx-2 mx-sm-2 mx-md-2 my-2 my-sm-2 my-md-0 my-lg-0" alt="">
+                        
+                        <img src="assets/images/asientos-on.svg" class="img-fluid mr-2" alt="">
+                        <span class="txt14 text-muted2">Asientos y datos</span>
+                        
+                        <img src="assets/images/separador.png" class="separador img-fluid mx-2 mx-sm-2 mx-md-2 mx-2 my-2 my-sm-2 my-md-0 my-lg-0" alt="">
+                        
+                        <img src="assets/images/pago-off.svg" class="img-fluid mr-2" alt="">
+                        <span class="txt14 text-muted2">Pago</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Trayecto -->
+        <section class="container-fluid containerlg-trayecto py-4">
+            <div class="container-lg rounded-lg">
+                <div class="row p-2">
+                    <div class="col-2 col-lg-1">
+                        <img src="assets/images/ruta.svg" class="img-fluid" alt="" style="width: 50px;">
+                    </div>
+                    <div class="col-10 col-lg-11 pl-0">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h5 class="titles24">México, TAPO</h5>
+                                <span class="text18">Terminal origen</span>
+                                <span class="float-right titles24">12:00hrs</span>
+                                <hr>
+                            </div>
+                            <div class="col-lg-12">
+                                <h5 class="titles24">Puebla, CAPU</h5>
+                                <span class="text18">Terminal destino</span>
+                                <span class="float-right titles24">14:30hrs</span>
+                                <hr>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Boletos/Fecha -->
+        <section class="container-fluid py-4 whiteback">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-12 col-sm-12  col-lg-4 d-flex align-items-center justify-content-center">
+                        <span class="fblack titles32">1 Adulto</span>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center text-center px-0">
+                        <span class="fblack titles24">Hoy - Vier. 30 de ago. 21:31h</span>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center">
+                        <span class="titles32 fgreen">$1,200.00MXN</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Asientos -->
+        <section class="container-fluid">
+            <div class="container-lg whiteback my-5 shadow rounded-lg p-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="titles24 text-left dblack">Elige tu(s) asiento(s) de ida</h5>
+                    </div>
+                    
+                    <div class="col-12 py-3">
+                        <div class="d-flex align-items-center justify-content-start">
+                            <div class="d-flex align-items-center justify-content-start flex-column flex-sm-row flex-md-row flex-lg-row mr-4">
+                                <div class="bullets-asientos disp mr-2"></div> Disponible
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start flex-column flex-sm-row flex-md-row flex-lg-row mr-4">
+                                <div class="bullets-asientos nodisp mr-2"></div> No disponible
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start flex-column flex-sm-row flex-md-row flex-lg-row">
+                                <div class="bullets-asientos select mr-2"></div> Seleccionado
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 text-center">
+                        <img src="assets/images/asientos-select.svg" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Registro Pasajeros -->
+        <section class="container-fluid mb-5">            
+            <div class="container-lg" id="registro_pasajeros">
+                <h5 class="fblack titles24 my-5">Registra a tu(s) pasajero(s)</h5>
+                <div class="row gray2back shadow p-5 rounded-lg">
+                    <div class="col-12">
+                        <span class="txt18 fblack text-left">Pasajero 1: <b>Adulto</b></span>
+                        <hr class="mt-2">
+                    </div>
+                    
+                    <div class="col-12">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="form-group col-lg-4">
+                                    <label for="nombre" class="txt16 f700 fblack mb-2">Nombre</label>
+                                    <input type="text" class="form-control fblack txt18 shadow-none" id="nombre" placeholder="Ej: María">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label for="apellidos" class="txt16 f700 fblack mb-2">Apellido(s)</label>
+                                    <input type="text" class="form-control fblack txt18 shadow-none" id="apellidos" placeholder="Ej: Torres Gómez">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label for="email" class="txt16 f700 fblack mb-2">Correo electrónico o celular</label>
+                                    <input type="email" class="form-control fblack txt18 shadow-none" id="email" placeholder="Ej: mario@correo.com ó 5512234556">
+                                </div>
+                                <div class="form-group col-12 helpform py-1 px-3 txt18">
+                                    Ingresa tu nombre completo y proporciona un correo o número celular para enviarte tus boletos. 
+                                </div>
+                                <div class="form-group col-12 col-lg-6">
+                                    <a href="" data-toggle="modal" data-target="#modalAsistencia" class="txt18 f700 fgreen2">
+                                        ¿Qué es la asistencia total? <img src="assets/images/info.png" class="img-fluid" alt="">
+                                    </a>                                    
+                                </div>
+                                <div class="form-group col-12 col-lg-6 d-flex flex-column flex-sm-row flex-md-row flex-lg-row align-items-center justify-content-start justify-content-sm-start justify-content-md-start justify-content-lg-end">
+                                    <span class="fblack txt18 f700 f18 mr-2">Agregar asistencia total</span>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input custom-control-input-lg" id="asistenciatotal" checked>
+                                        <label class="custom-control-label pl-2" for="asistenciatotal">Ida $15.00 MXN</label>
+                                    </div>
+                                </div>
+                                <hr class="w-100">
+                                <div class="form-group col-12 d-flex align-items-center justify-content-start mt-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input custom-control-input-lg" id="okterminos" checked>
+                                        <label class="custom-control-label pl-2" for="okterminos">De acuerdo con los <a href="" class="fpurple f700">Términos y Condiciones</a>, así como el <a href="" class="fpurple f700">Aviso de Privacidad</a>.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="container-fluid pt-3 pb-5">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-3 mb-sm-0 mb-md-0 mb-lg-0">
+                        <a href="pantalla3.html" class="btn btn-white w-100 py-4 titles24">Regresar</a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <a href="pantalla5.html" class="btn btn-gray w-100 py-4 titles24">Continuar</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modalAsistencia" tabindex="-1" aria-labelledby="modalAsistenciaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content p-5 rounded-lg">
+                    <div class="modal-header justify-content-center">
+                        <h5 class="titles40" id="modalAsistenciaLabel">¿Qué es asistencia total?</h5>
+                    </div>
+                    
+                    <div class="modal-body pt-5">
+                        <p class="txt24">
+                            Es un servicio adicional en la compra de tu boleto, es completamente opcional y puedes adquirirla tanto en la taquilla como en nuestros canales digitales (página WEB y ADO Móvil). Aplica para todos los servicios directos.
+                        </p>
+                        <p class="txt24">
+                            Con este servicio puedes obtener asistencia médica, legal, funeraria, red de descuentos y otros servicios que puedas requerir. Estos beneficios tienen una cobertura de acuerdo a la vigencia que adquieras, la vigencia inicia una vez que llegaste a tu destino.
+                        </p>
+                        <p class="txt24">
+                            El cupón color azul es de 7 días y el cupón color negro es de 24 horas. Para mayor información ingresa a <a href="asistenciatotal.app" target="_blank" class="fpurple">asistenciatotal.app</a> o comunícate al <a href="tel:8000300236" target="_blank" class="fpurple">800 0300 236</a>.
+                        </p>
+                        <p class="txt24">
+                            Para hacer válido tu seguro de Asistencia Total debes conservar el boleto de tu viaje, ya que te lo solicitarán cuando te comuniques.
+                            Los servicios sólo son aplicables al haber descendido del autobús en la terminal de la ciudad destino marcada en tu boleto.
+                        </p>
+                    </div>
+                                        
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-purple w-100 py-4 txt24" data-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            
+        <script src="assets/js/jquery.slim.min.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>
+    </body>
+</html>

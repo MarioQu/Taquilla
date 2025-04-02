@@ -22,6 +22,12 @@
 body{
     background-color: #FAFBFD;
 }
+a{
+    text-decoration: none !important;
+}
+.grayborder{
+    border: 1px solid #B5BAC7;
+}
 
 
 /* ---------- Colores ---------- */
@@ -30,12 +36,15 @@ body{
     --black:        #000000;
     --red:          #DA291C;
     --purple:       #5F2167;
+    --purple2:      #E4DAE6;
     --gray1:        #808391;
     --gray2:        #F6F7FB;
+    --gray3:        #F4F6F9;
     --grayf1:       #F1F3F9;
     --dark1:        #1D1F24;
     --green:        #258910;
     --green2:       #169A8E;
+    --green3:       #E7F7E4;
 }
 
 
@@ -67,6 +76,12 @@ body{
 .txt24{
     font-family: 'GothamPro', Arial, Helvetica, sans-serif;
     font-size: 24px;
+    line-height: 28px;
+}
+.txt32{
+    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    line-height: 36px;
 }
 
 .fwhite{
@@ -87,6 +102,9 @@ body{
 .fgreen2{
     color: var(--green2)
 }
+.fpurple{
+    color: var(--purple);
+}
 
 .blackback{
     background-color: var(--black);
@@ -99,6 +117,17 @@ body{
 }
 .gray2back{
     background-color: var(--gray2)
+}
+.gray3back{
+    background-color: var(--gray3);
+}
+.green3back{
+    background-color: var(--green3);
+    border-bottom: 1px solid var(--green);
+}
+.purpleback{
+    background-color: var(--purple2);
+    border: 1px solid var(--purple);
 }
 
 .f400{
@@ -128,6 +157,28 @@ body{
     background-color: var(--purple);
     border: 1px solid var(--white);
     color: var(--white);
+}
+
+.btn-gray{
+    background-color: #E3E7F2;
+    border: 1px solid #E3E7F2;
+    color: #474A56;
+}.btn-gray:hover{
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: var(--white);
+    border: 1px solid var(--purple);
+    color: var(--purple);
+}
+
+.btn-green{
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    color: var(--white);
+}.btn-green:hover{
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: var(--white);
+    border: 1px solid var(--green);
+    color: var(--green);
 }
 
 
@@ -224,4 +275,51 @@ body{
     #estatus_corrida .separador{
         width: 30px;                
     }
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: var(--purple);
+    border-color: var(--purple);
+    background-color: var(--purple);
+}
+.bullets-asientos{
+    width: 15px; 
+    height: 15px;                  
+    border-radius: 50%;
+}
+.bullets-asientos.disp{
+    border: 1px solid #B5BAC7;
+    background-color: transparent;
+}
+.bullets-asientos.nodisp{
+    border: 1px solid #B5BAC7;
+    background-color: #848CA2;
+}
+.bullets-asientos.select{
+    background-color: var(--purple);
+    border: 1px solid #B5BAC7;
+}
+#registro_pasajeros a:hover,
+#modalAsistencia a:hover{
+    color: var(--dark1)
+}
+#registro_pasajeros .custom-checkbox .custom-control-label::before {
+    top: -0.10rem;
+    left: -1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#registro_pasajeros .custom-control-label::after {
+    top: -0.3rem;
+    left: -1.7rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* **************************************  
+            Pantalla final 
+************************************** */
+#sigue_tu_viaje{
+    background-image: url("../images/seguir-viaje.svg");
 }
