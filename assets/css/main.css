@@ -286,7 +286,6 @@ a{
     border-bottom: 2px solid #B5BAC7;
     background-color: #ECEFF6;
 }
-
 .containerlg-trayecto{
     background-color: #F4F6F9;
 }
@@ -304,10 +303,21 @@ a{
 #corridas::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
+#corridas .borders{
+    background-image: url("../images/line-border.png"), url("../images/line-border.png");
+    background-size: 1px 60%, 1px 60%;
+    background-repeat: no-repeat;
+    background-position: left center, right center;
+}
 
 @media(max-width: 992px){
     #estatus_corrida .separador{
         width: 30px;                
+    }
+}
+@media(max-width: 767px){
+    #corridas .borders{
+        background: none !important;
     }
 }
 
