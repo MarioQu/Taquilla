@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/aos.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <title>Taquilla reversible</title>
     </head>
@@ -39,13 +40,13 @@
                     </div>
                     <div class="col-10 col-lg-11 pl-0">
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-lg-12" data-aos="fade-left" data-aos-duration="1500">
                                 <h5 class="titles24">México, TAPO</h5>
                                 <span class="text18">Terminal origen</span>
                                 <!-- <span class="float-right titles24">12:00hrs</span> -->
                                 <hr>
                             </div>
-                            <div class="col-lg-12">
+                            <div class="col-lg-12" data-aos="fade-right" data-aos-duration="1900">
                                 <h5 class="titles24">Puebla, CAPU</h5>
                                 <span class="text18">Terminal destino</span>
                                 <!-- <span class="float-right titles24">14:30hrs</span> -->
@@ -61,10 +62,10 @@
         <section class="container-fluid py-4 whiteback">
             <div class="container-lg">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1900">
                         <span class="fblack titles32">1 Adulto</span>
                     </div>
-                    <div class="col-lg-6 text-left text-sm-left text-md-left text-lg-right">
+                    <div class="col-lg-6 text-left text-sm-left text-md-left text-lg-right" data-aos="zoom-in" data-aos-duration="1900">
                         <span class="fblack titles24">Hoy - Vier. 30 de ago. 21:31 h</span>
                     </div>
                 </div>
@@ -74,7 +75,7 @@
 
         <!-- Corridas disponibles -->
         <section class="container-fluid grayf1back">
-            <div class="container-lg py-4" id="corridas">
+            <div class="container-lg py-4" id="corridas" data-aos="fade-up" data-aos-duration="1500">
                 <!-- 
                     Aquí se pintan las corridas N veces (mediante la función javascript de abajo) para evitar repetir el bloque HTML,
                     si se quiere quitar la función y pintar el HTML de forma normal, basta con traer aquí el código dentro de la variable bloqueHTML
@@ -95,7 +96,10 @@
             
         <script src="assets/js/jquery.slim.min.js"></script> 
         <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/aos.js"></script>
         <script>
+            AOS.init();
+            
             const corridas = document.getElementById('corridas');
 
             const bloqueHTML = `

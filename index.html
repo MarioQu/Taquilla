@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/aos.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <title>Taquilla reversible</title>
     </head>
@@ -12,7 +13,7 @@
         <section class="container-fluid mt-5">
             <div class="container-lg">
                 <div class="row">  
-                    <div class="col-12 text-left">
+                    <div class="col-12 text-left" data-aos="fade-down" data-aos-duration="1500">
                         <img src="assets/images/Logo.png" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -23,7 +24,7 @@
             <div class="container-lg">
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="titles40 fwhite text-left">
+                        <h1 class="titles40 fwhite text-left" data-aos="fade-right" data-aos-duration="2700">
                             Compra tus boletos más rápido en el kiosko digital de ADO y vive una nueva experiencia.
                         </h1>
                     </div>
@@ -35,11 +36,11 @@
         
         <section class="container-fluid mt-4 mb-lg">
             <div class="container-lg colcards shadow py-5 px-5">
-                <h2 class="titles40 fblack text-center">¿A dónde quieres viajar?</h2>
+                <h2 class="titles40 fblack text-center" data-aos="fade-down" data-aos-duration="1800">¿A dónde quieres viajar?</h2>
                 
                 <div class="row mt-5">
                     <div class="col-lg-6 px-4">
-                        <div class="card whiteback border-0 shadow mb-5">
+                        <div class="card whiteback border-0 shadow mb-5" data-aos="zoom-in-left" data-aos-duration="1500">
                             <img src="assets/images/capu.png" class="card-img-top" alt="">
                             <div class="card-body text-center px-5">
                                 <h5 class="titles24 fblack">Puebla, Capu</h5>
@@ -51,7 +52,7 @@
                     </div><!-- /.col-6 card --> 
                     
                     <div class="col-lg-6 px-4">
-                        <div class="card whiteback border-0 shadow mb-5">
+                        <div class="card whiteback border-0 shadow mb-5" data-aos="zoom-in-left" data-aos-duration="1800">
                             <img src="assets/images/oaxaca.png" class="card-img-top" alt="">
                             <div class="card-body text-center px-5">
                                 <h5 class="titles24 fblack">Oaxaca</h5>
@@ -63,7 +64,7 @@
                     </div><!-- /.col-6 card --> 
                     
                     <div class="col-lg-6 px-4">
-                        <div class="card whiteback border-0 shadow mb-5">
+                        <div class="card whiteback border-0 shadow mb-5" data-aos="zoom-in-right" data-aos-duration="2100">
                             <img src="assets/images/caxa.png" class="card-img-top" alt="">
                             <div class="card-body text-center px-5">
                                 <h5 class="titles24 fblack">Xalapa, CAXA</h5>
@@ -75,7 +76,7 @@
                     </div><!-- /.col-6 card --> 
                     
                     <div class="col-lg-6 px-4">
-                        <div class="card whiteback border-0 shadow mb-5">
+                        <div class="card whiteback border-0 shadow mb-5" data-aos="zoom-in-right" data-aos-duration="2400">
                             <img src="assets/images/tehuacan.png" class="card-img-top" alt="">
                             <div class="card-body text-center px-5">
                                 <h5 class="titles24 fblack">Tehuacán</h5>
@@ -95,12 +96,12 @@
                     </div>
                     <div class="col-lg-9 d-flex flex-column align-items-start justify-content-center">
                         <h3 class="titles32 fwhite text-left">Ruta Café</h3>
-                        <p class="txt18 fwhite text-left mb-0 pb-0">
+                        <p class="txt18 fwhite text-left mb-0 pb-0" data-aos="zoom-out-up" data-aos-duration="1500">
                             Recuerda que si viajas en GL o Platino obtendrás un café gratis. 
                         </p>
                     </div>
                     <div class="col-lg-2 d-none d-lg-block">
-                        <img src="assets/images/cafe.png" class="img-fluid img-abs" alt="">
+                        <img src="assets/images/cafe.png" class="img-fluid img-abs" alt="" data-aos="fade-down" data-aos-duration="1700">
                     </div>
                 </div>
             </div>
@@ -112,9 +113,6 @@
                 <div class="modal-content py-4 px-4">
                     <div class="modal-header justify-content-center">
                         <h5 class="text-center titles40 fblack" id="modalViajantesLabel">¿Quiénes viajan?</h5>
-                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button> -->
                     </div>
                     <div class="modal-body pb-5">
                         <div class="container-fluid">
@@ -122,7 +120,7 @@
                                 <div class="col-12 col-lg-6 d-flex align-items-end justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start">
                                     <span class="titles40 fblack">Puebla, Capu</span>
                                 </div>
-                                <div class="col-12 col-lg-6 d-flex align-items-end justify-content-center justify-content-sm-center justify-content-md-center justify-content-md-end">
+                                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center justify-content-sm-center justify-content-md-center justify-content-md-end">
                                     <span class="txt24 fblack">Hoy - 26 de marzo .  21:30 h</span>
                                 </div>
                             </div>
@@ -138,11 +136,11 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center justify-content-lg-end">
-                                            <button class="btn btn-cant" id="dec_ad">-</button>
+                                            <button class="btn btn-cant" id="dec_ad"></button>
                                             <form action="">
-                                                <input type="text" id="total_ad" class="titles40 form-control fblack">
+                                                <input type="text" id="total_ad" class="titles40 form-control" readonly>
                                             </form>
-                                            <button class="btn btn-cant" id="inc_ad">+</button>
+                                            <button class="btn btn-cant" id="inc_ad"></button>
                                         </div>
                                     </div>
                                 </div><!-- /.col-12 adulto -->
@@ -159,9 +157,9 @@
                                         <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center justify-content-lg-end">
                                             <button class="btn btn-cant" id="dec_ni">-</button>
                                             <form action="">
-                                                <input type="text" id="total_ni" class="titles40 form-control fblack">
+                                                <input type="text" id="total_ni" class="titles40 form-control" readonly>
                                             </form>
-                                            <button class="btn btn-cant" id="inc_ni">+</button>
+                                            <button class="btn btn-cant" id="inc_ni"></button>
                                         </div>
                                     </div>
                                 </div><!-- /.col-12 niños -->
@@ -176,11 +174,11 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center justify-content-lg-end">
-                                            <button class="btn btn-cant" id="dec_ina">-</button>
+                                            <button class="btn btn-cant" id="dec_ina"></button>
                                             <form action="">
-                                                <input type="text" id="total_ina" class="titles40 form-control fblack">
+                                                <input type="text" id="total_ina" class="titles40 form-control" readonly>
                                             </form>
-                                            <button class="btn btn-cant" id="inc_ina">+</button>
+                                            <button class="btn btn-cant" id="inc_ina"></button>
                                         </div>
                                     </div>
                                 </div><!-- /.col-12 INAPAM -->
@@ -195,11 +193,11 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center justify-content-lg-end">
-                                            <button class="btn btn-cant" id="dec_est">-</button>
+                                            <button class="btn btn-cant" id="dec_est"></button>
                                             <form action="">
-                                                <input type="text" id="total_est" class="titles40 form-control fblack">
+                                                <input type="text" id="total_est" class="titles40 form-control" readonly>
                                             </form>
-                                            <button class="btn btn-cant" id="inc_est">+</button>
+                                            <button class="btn btn-cant" id="inc_est"></button>
                                         </div>
                                     </div>
                                 </div><!-- /.col-12 Estudiantes -->
@@ -214,11 +212,11 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center justify-content-lg-end">
-                                            <button class="btn btn-cant" id="dec_mae">-</button>
+                                            <button class="btn btn-cant" id="dec_mae"></button>
                                             <form action="">
-                                                <input type="text" id="total_mae" class="titles40 form-control fblack">
+                                                <input type="text" id="total_mae" class="titles40 form-control" readonly>
                                             </form>
-                                            <button class="btn btn-cant" id="inc_mae">+</button>
+                                            <button class="btn btn-cant" id="inc_mae"></button>
                                         </div>
                                     </div>
                                 </div><!-- /.col-12 Maestros -->
@@ -231,7 +229,7 @@
                                 <button type="button" class="btn btn-lg btn-white py-3" data-dismiss="modal">Modificar viaje</button>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                <a href="pantalla2.html" type="button" class="btn btn-lg btn-purple py-3">Comprar</a>
+                                <a href="pantalla2.html" type="button" class="btn btn-lg btn-green py-3">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -241,8 +239,11 @@
             
         <script src="assets/js/jquery.slim.min.js"></script> 
         <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/aos.js"></script>
        
         <script>
+            AOS.init();
+            
             $(document).ready(function(){
                 var total_ad    = 0;
                 var total_ni    = 0;
@@ -256,14 +257,10 @@
                 $("#total_est").val(total_est); 
                 $("#total_mae").val(total_mae); 
                 
-                // if($("#total_ad").val(total_ad) == 0 ){
-                //     $("#total_ad").removeClass("fblack");
-                //     $("#total_ad").addClass("text-muted"); 
-                // }else{
-                //     $("#total_ad").addClass("fblack");
-                //     $("#total_ad").removeClass("text-muted");
-                // }
                 
+                /* *******************************
+                    Deshabilitar botón de menos(-) cuando la cantidad de boletos llega a cero 
+                */
                 function disableButton() {
                     $("#dec_ad").prop("disabled", total_ad <= 0);
                     $("#dec_ni").prop("disabled", total_ni <= 0);
@@ -271,32 +268,75 @@
                     $("#dec_est").prop("disabled", total_est <= 0);
                     $("#dec_mae").prop("disabled", total_mae <= 0);
                 }
+                
+                /* *******************************
+                    Cuando la cantidad de boletos llega a cero, se aplica un text-muted a dicho cero, cuando la cantidad es mayor, se agrega un color negro 
+                */
+                function changeColor(){
+                    if(total_ad <= 0){
+                        $("#total_ad").addClass("text-muted");
+                    }else{
+                        $("#total_ad").removeClass("text-muted");
+                        $("#total_ad").addClass("fblack"); 
+                    }              
+                    
+                    if(total_ni <= 0){
+                        $("#total_ni").addClass("text-muted");
+                    }else{
+                        $("#total_ni").removeClass("text-muted");
+                        $("#total_ni").addClass("fblack"); 
+                    }
+                    
+                    if(total_ina <= 0){
+                        $("#total_ina").addClass("text-muted");
+                    }else{
+                        $("#total_ina").removeClass("text-muted");
+                        $("#total_ina").addClass("fblack"); 
+                    }
+                    
+                    if(total_est <= 0){
+                        $("#total_est").addClass("text-muted");
+                    }else{
+                        $("#total_est").removeClass("text-muted");
+                        $("#total_est").addClass("fblack"); 
+                    }
+                    
+                    if(total_mae <= 0){
+                        $("#total_mae").addClass("text-muted");
+                    }else{
+                        $("#total_mae").removeClass("text-muted");
+                        $("#total_mae").addClass("fblack"); 
+                    }
+                }
 
+                /* Click Botones más/menos */
                 $("#inc_ad").click(function(){
                     total_ad++;
                     $("#total_ad").val(total_ad);
                     disableButton();
+                    changeColor();
                 });
                 $("#dec_ad").click(function(){
                     if (total_ad > 0) { 
                         total_ad--;
                         $("#total_ad").val(total_ad);
-                        // $("#total_ad").removeClass("fblack");
-                        // $("#total_ad").addClass("text-muted");
                         disableButton();
-                    }       
+                        changeColor();
+                    }     
                 });
                 
                 $("#inc_ni").click(function(){
                     total_ni++;
                     $("#total_ni").val(total_ni);
                     disableButton();
+                    changeColor();
                 });
                 $("#dec_ni").click(function(){
                     if (total_ni > 0) { 
                         total_ni--;
                         $("#total_ni").val(total_ni);
                         disableButton();
+                        changeColor();
                     }       
                 });
                 
@@ -304,12 +344,14 @@
                     total_ina++;
                     $("#total_ina").val(total_ina);
                     disableButton();
+                    changeColor();
                 });
                 $("#dec_ina").click(function(){
                     if (total_ina > 0) { 
                         total_ina--;
                         $("#total_ina").val(total_ina);
                         disableButton();
+                        changeColor();
                     }       
                 });
                 
@@ -317,12 +359,14 @@
                     total_est++;
                     $("#total_est").val(total_est);
                     disableButton();
+                    changeColor();
                 });
                 $("#dec_est").click(function(){
                     if (total_est > 0) { 
                         total_est--;
                         $("#total_est").val(total_est);
                         disableButton();
+                        changeColor();
                     }       
                 });
                 
@@ -330,12 +374,14 @@
                     total_mae++;
                     $("#total_mae").val(total_mae);
                     disableButton();
+                    changeColor();
                 });
                 $("#dec_mae").click(function(){
                     if (total_mae > 0) { 
                         total_mae--;
                         $("#total_mae").val(total_mae);
                         disableButton();
+                        changeColor();
                     }       
                 });
                                                 

@@ -221,10 +221,10 @@ a{
     bottom: -10px;
     right: -40px;
 }
-#modalViajantes .modal-dialog-centered .modal-dialog, 
+/* #modalViajantes .modal-dialog-centered .modal-dialog, 
 #modalViajantes .modal-dialog-centered.modal-dialog {
     align-items: flex-end !important;
-}
+} */
 #modalViajantes .modal-content{
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
@@ -241,6 +241,28 @@ a{
     height: 50px;
     font-size: 20px;
 }
+
+#dec_ad,
+#dec_ni,
+#dec_ina,
+#dec_est,
+#dec_mae{
+    background-image: url('../images/menos.png'); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: 80%;
+}
+#inc_ad,
+#inc_ni,
+#inc_ina,
+#inc_est,
+#inc_mae{
+    background-image: url('../images/mas.png'); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: 70%;
+}
+
 #modalViajantes .form-control{
     width: 70px;
     text-align: center;
@@ -250,6 +272,10 @@ a{
 #modalViajantes .modal-footer .row,
 #modalViajantes .modal-footer .btn{
     width: 100%;
+}
+#modalViajantes .form-control:disabled, 
+#modalViajantes .form-control[readonly] {
+    background-color: var(--white);
 }
 
 
