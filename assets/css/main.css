@@ -49,6 +49,10 @@ a{
 
 
 /* ---------- Tipografía ---------- */
+.titles18{
+    font-family: 'GothamPro-Bold';
+    font-size: 18px;
+}
 .titles24{
     font-family: 'GothamPro-Bold';
     font-size: 24px;
@@ -60,6 +64,10 @@ a{
 .titles40{
     font-family: 'GothamPro-Bold';
     font-size: 40px;
+}
+.txt12{
+    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 .txt14{
     font-family: 'GothamPro', Arial, Helvetica, sans-serif;
@@ -319,6 +327,12 @@ a{
     #corridas .borders{
         background: none !important;
     }
+}
+#estatus_corrida .borderleft{
+    background-image: url("../images/line-border.png");
+    background-size: 1px 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 .custom-control-input:checked~.custom-control-label::before {

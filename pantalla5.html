@@ -13,19 +13,23 @@
         <section class="container-fluid py-3 sticky-top" id="estatus_corrida">
             <div class="container-lg">
                 <div class="row">
-                    <div class="col-12 col-lg-12 d-flex align-items-center justify-content-center">
-                        <img src="assets/images/corrida-off.png" class="img-fluid mr-2" alt="">
-                        <span class="txt14">Elegir corrida</span>
+                    <div class="col-12 col-lg-12 d-flex align-items-center justify-content-between">
+                        <div>
+                            <img src="assets/images/corrida-off.png" class="img-fluid mr-2" alt="">
+                            <span class="txt14">Elegir corrida</span>
+                            <img src="assets/images/separador.png" class="separador img-fluid mx-2 mx-sm-2 mx-md-2 my-2 my-sm-2 my-md-0 my-lg-0" alt="">
+                            <img src="assets/images/asientos-on.png" class="img-fluid mr-2" alt="">
+                            <span class="txt14 text-muted2">Asientos y datos</span>
+                            <img src="assets/images/separador.png" class="separador img-fluid mx-2 mx-sm-2 mx-md-2 mx-2 my-2 my-sm-2 my-md-0 my-lg-0" alt="">
+                            <img src="assets/images/pago-off.png" class="img-fluid mr-2" alt="">
+                            <span class="txt14 text-muted2">Pago</span>
+                        </div>
                         
-                        <img src="assets/images/separador.png" class="separador img-fluid mx-2 mx-sm-2 mx-md-2 my-2 my-sm-2 my-md-0 my-lg-0" alt="">
-                        
-                        <img src="assets/images/asientos-on.png" class="img-fluid mr-2" alt="">
-                        <span class="txt14 text-muted2">Asientos y datos</span>
-                        
-                        <img src="assets/images/separador.png" class="separador img-fluid mx-2 mx-sm-2 mx-md-2 mx-2 my-2 my-sm-2 my-md-0 my-lg-0" alt="">
-                        
-                        <img src="assets/images/pago-off.png" class="img-fluid mr-2" alt="">
-                        <span class="txt14 text-muted2">Pago</span>
+                        <div class="pl-3 d-flex align-items-center justify-content-center borderleft">
+                            <img src="assets/images/reloj.png" class="img-fluid mr-2" alt="" style="width: 30px;">
+                            <span class="txt12 fdark1">Tiempo restante</span>
+                            <span class="fred titles18 ml-1">00:00</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -173,9 +177,18 @@
                 </div>
             </div>
         </footer>
+        
+        
+        <!-- Eliminar este bloque, ya que son los accesos directos para los popups de error -->
+        <div class="container-lg text-center mb-5">
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#error1">Error 1</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#error2">Error 2</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#error3">Error 3</button>
+        </div>
+        <!-- -->
 
         
-        <!-- Modal -->
+        <!-- Modal Asistencia total -->
         <div class="modal fade" id="modalAsistencia" tabindex="-1" aria-labelledby="modalAsistenciaLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content p-5 rounded-lg">
@@ -191,7 +204,7 @@
                             Con este servicio puedes obtener asistencia médica, legal, funeraria, red de descuentos y otros servicios que puedas requerir. Estos beneficios tienen una cobertura de acuerdo a la vigencia que adquieras, la vigencia inicia una vez que llegaste a tu destino.
                         </p>
                         <p class="txt24">
-                            El cupón color azul es de 7 días y el cupón color negro es de 24 horas. Para mayor información ingresa a <a href="asistenciatotal.app" target="_blank" class="fpurple">asistenciatotal.app</a> o comunícate al <a href="tel:8000300236" target="_blank" class="fpurple">800 0300 236</a>.
+                            El cupón color azul es de 7 días y el cupón color negro es de 24 horas. Para mayor información ingresa a <a href="https://asistenciatotal.app/index.html" target="_blank" class="fpurple">asistenciatotal.app</a> o comunícate al <a href="tel:8000300236" target="_blank" class="fpurple">800 0300 236</a>.
                         </p>
                         <p class="txt24">
                             Para hacer válido tu seguro de Asistencia Total debes conservar el boleto de tu viaje, ya que te lo solicitarán cuando te comuniques.
@@ -201,6 +214,83 @@
                                         
                     <div class="modal-footer border-0">
                         <button type="button" class="btn btn-purple w-100 py-4 txt24 shadow-none" data-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Error 1 -->
+        <div class="modal fade" id="error1" tabindex="-1" aria-labelledby="error1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="assets/images/warning.png" class="img-fluid mb-3" alt="">
+                        <h5 class="titles32 fblack mb-3">Título del mensaje</h5>
+                        <p class="txt18 fblack">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam aliquet felis eu commodo dignissim vestibulum ac blandit enim
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Error 2 -->
+        <div class="modal fade" id="error2" tabindex="-1" aria-labelledby="error2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="assets/images/warning.png" class="img-fluid mb-3" alt="">
+                        <h5 class="titles32 fblack mb-3">Título del mensaje</h5>
+                        <p class="txt18 fblack">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam aliquet felis eu commodo dignissim vestibulum ac blandit enim
+                        </p>
+                        
+                        <button type="button" class="btn btn-purple w-100 txt24 py-3 my-3" data-dismiss="modal">
+                            Continuar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Error 3 -->
+        <div class="modal fade" id="error3" tabindex="-1" aria-labelledby="error3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="assets/images/warning.png" class="img-fluid mb-3" alt="">
+                        <h5 class="titles32 fblack mb-3">Título del mensaje</h5>
+                        <p class="txt18 fblack">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam aliquet felis eu commodo dignissim vestibulum ac blandit enim
+                        </p>
+                        
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-white w-100 txt24 py-3 my-3" data-dismiss="modal">
+                                    Cancelar
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-purple w-100 txt24 py-3 my-3" data-dismiss="modal">
+                                    Continuar
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
