@@ -374,6 +374,22 @@ a{
     height: 2rem;
 }
 
+/* **************************************  
+            Pantalla Pago 
+************************************** */
+@media(min-width: 768px) and (orientation: portrait){
+    #footer-pago{
+        position: fixed;
+        bottom: 0;
+    }
+}
+@media(min-width: 992px) and (orientation: landscape){
+    #footer-pago{
+        position: fixed;
+        bottom: 0;
+    }
+}
+
 
 /* **************************************  
             Pantalla final 
